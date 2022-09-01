@@ -1,6 +1,7 @@
 import * as React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const StyledContainer = styled.div`
   border-bottom: 1px solid black;
@@ -46,7 +47,7 @@ const NavBar = () => {
     // <StyledContainer>
     <StyledNavBar>
       <StyledMenu>
-        <Link to="/">Logo</Link>
+        <Link to="/"> <StaticImage loading="eager" src="../images/logo.svg" alt="Logo"/></Link>
         <Link to="/cases">Cases</Link>
         <Link to="/services">Services</Link>
         <Link to="/aboutUs">About us</Link>
