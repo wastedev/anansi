@@ -2,6 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import FontAwesomeIcon from "@fortawesome/free-regular-svg-icons"
 
 const StyledContainer = styled.div`
   border-bottom: 1px solid black;
@@ -70,7 +71,10 @@ const NavBar = () => {
       </StyledMenu>
       <StyledFeedbackButtons>
         <button>t</button>
-        <button>Book a call</button>
+        <button>
+          <FontAwesomeIcon icon="fa-light fa-phone" />
+          Book a call
+        </button>
       </StyledFeedbackButtons>
     </StyledNavBar>
     // </StyledContainer>
