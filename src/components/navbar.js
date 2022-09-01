@@ -4,11 +4,8 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const StyledContainer = styled.div`
-  border-bottom: 1px solid black;
-  max-width: 1320px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 `
 
@@ -16,6 +13,7 @@ const StyledNavBar = styled.header`
   display: flex;
   position: relative;
   justify-content: space-between;
+  min-width: 1320px;
 `
 
 const StyledMenu = styled.div`
@@ -55,25 +53,25 @@ const StyledFeedbackButtons = styled.div`
 
 const NavBar = () => {
   return (
-    // <StyledContainer>
-    <StyledNavBar>
-      <StyledMenu>
-        <Link to="/">
-          {" "}
-          <StaticImage loading="eager" src="../images/logo.svg" alt="Logo" />
-        </Link>
-        <Link to="/cases">Cases</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/aboutUs">About us</Link>
-        <Link to="/careers">Careers</Link>
-        <Link to="/contacts">Contacts</Link>
-      </StyledMenu>
-      <StyledFeedbackButtons>
-        <button>t</button>
-        <button>Book a call</button>
-      </StyledFeedbackButtons>
-    </StyledNavBar>
-    // </StyledContainer>
+    <StyledContainer>
+      <StyledNavBar>
+        <StyledMenu>
+          <Link to="/">
+            {" "}
+            <StaticImage loading="eager" src="../images/logo.svg" alt="Logo" />
+          </Link>
+          <Link to="/cases">Cases</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/aboutUs">About us</Link>
+          <Link to="/careers">Careers</Link>
+          <Link to="/contacts">Contacts</Link>
+        </StyledMenu>
+        <StyledFeedbackButtons>
+          <button>t</button>
+          <button>Book a call</button>
+        </StyledFeedbackButtons>
+      </StyledNavBar>
+    </StyledContainer>
   )
 }
 
