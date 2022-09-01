@@ -22,6 +22,11 @@ const StyledMenu = styled.div`
     padding-right: 30px;
     font-size: 20px;
     text-decoration: none;
+
+    :hover {
+      text-decoration: underline;
+      color: #84cc16;
+    }
   }
 `
 
