@@ -55,6 +55,31 @@ const StyledCarouselBoxBlock = styled.div`
   }
 `
 
+const StyledStrategyBlock = styled.div`
+  background-color: #292524;
+  color: white;
+
+  h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 120px;
+  }
+
+  text {
+    justify-content: center;
+    padding: 10px;
+    color: #a8a29e;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+`
+
 const HomePage = () => {
   return (
     <StyledHomePage>
@@ -78,6 +103,16 @@ const HomePage = () => {
           <button>Grow my business</button>
         </StyledButton>
       </StyledCarouselBoxBlock>
+      <StyledStrategyBlock>
+        <h1>How we works?</h1>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do.
+        </text>
+      </StyledStrategyBlock>
     </StyledHomePage>
   )
 }
