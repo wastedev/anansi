@@ -1,141 +1,239 @@
 import * as React from "react"
-import Header from "../components/layout/header"
+import styled from "styled-components"
+import { StaticImage } from "gatsby-plugin-image"
 
-const IndexPage = () => {
+const StyledHomePage = styled.div`
+  /* flex-direction: column; */
+  /* position: relative; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+`
+
+const StyledButton = styled.div`
+  margin: 10px; //test
+  button {
+    color: white;
+    background-color: #65a30d;
+    border-radius: 8px;
+    border: 1px solid #65a30d;
+    width: 225px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    :hover {
+      height: 35px;
+      font-size: 24px;
+    }
+  }
+`
+
+const StyledCarouselBoxBlock = styled.div`
+  /* margin: 0;
+  padding: 0; */
+  width: 50vh;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  h1 {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 64px;
+    color: #292524;
+  }
+
+  div {
+    align-items: flex-end;
+    right: 0;
+  }
+
+  text {
+    font-size: 20px;
+    color: #57534e;
+    line-height: 30px;
+  }
+`
+
+const StyledStrategyBlock = styled.div`
+  background-color: #292524;
+  color: white;
+
+  h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 120px;
+  }
+
+  text {
+    justify-content: center;
+    padding: 10px;
+    color: #a8a29e;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+`
+const StyledTechnologiesblock = styled.div`
+
+
+  h1{
+    text-align:center;
+  }
+
+  h3{
+    text-transform:uppercase;
+    text-align:center;
+    padding: 10px 0px;
+    margin: 0px;
+  }
+
+  p{
+    text-align:center;
+    margin: 0px
+  }
+
+  ul{
+    height: auto;
+    right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 11px;
+  }
+
+  li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    position: relative;
+    width: 213px;
+  }
+
+  .tecno_wrapper{
+    
+  }
+`
+
+const StyledInfoBlock = styled.div`
+padding: 40px 0px;
+
+  .info_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .info_block{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .image_right{
+    height: 400px;
+    overflow: hidden;
+  }
+  .text_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+`
+
+const HomePage = () => {
   return (
-    <div>
-      <Header> </Header>
-    </div>
+    <StyledHomePage>
+
+      <StyledCarouselBoxBlock>
+        <h1>
+          Lorem ipsum <b>dolor</b> sit amet!
+        </h1>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </text>
+        <div>
+          <StaticImage
+            src="../images/CodeSnippetImage.png"
+            alt="non image"
+          ></StaticImage>
+        </div>
+        <StyledButton>
+          <button>Grow my business</button>
+        </StyledButton>
+      </StyledCarouselBoxBlock>
+
+      <StyledStrategyBlock>
+        <h1>How we works?</h1>
+        <text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do.
+        </text>
+      </StyledStrategyBlock>
+
+      <StyledTechnologiesblock>
+        <h1>Technologies</h1>
+        <div className="tecno_wrapper">
+          <ul>
+            <li>
+              <h3>Sql</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.</p>
+            </li>
+            <li>
+              <h3>NoSql</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.</p>
+            </li>
+            <li>
+              <h3>AWS</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.</p>
+            </li>
+            <li>
+              <h3>Azure</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.</p>
+            </li>
+          </ul>
+        </div>
+      </StyledTechnologiesblock>
+
+      <StyledInfoBlock>
+        <div className="info_wrapper">
+          <div className="text_left info_block">
+            <h1>Lorem ipsum dolor sit amet!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</p>
+          </div>
+          <div className="image_right info_block">
+            <StaticImage
+              src="../images/default_img.png"
+              alt="non image"
+            ></StaticImage>
+          </div>
+        </div>
+      </StyledInfoBlock>
+    </StyledHomePage>
   )
 }
 
-export default IndexPage
-
-//#region oldCode
-
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-// export const Head = () => <Seo title="Home" />
-
-// <Layout>
-//   <Seo title="Home" />
-//   <div className={styles.textCenter}>
-//     <StaticImage
-//       src="../images/example.png"
-//       loading="eager"
-//       width={64}
-//       quality={95}
-//       formats={["auto", "webp", "avif"]}
-//       alt=""
-//       style={{ marginBottom: `var(--space-3)` }}
-//     />
-//     <h1>
-//       Welcome to <b>Gatsby!</b>
-//     </h1>
-//     <p className={styles.intro}>
-//       <b>Example pages:</b>{" "}
-//       {samplePageLinks.map((link, i) => (
-//         <React.Fragment key={link.url}>
-//           <Link to={link.url}>{link.text}</Link>
-//           {i !== samplePageLinks.length - 1 && <> · </>}
-//         </React.Fragment>
-//       ))}
-//       <br />
-//       Edit <code>src/pages/index.js</code> to update this page.
-//     </p>
-//   </div>
-//   <ul className={styles.list}>
-//     {links.map(link => (
-//       <li key={link.url} className={styles.listItem}>
-//         <a
-//           className={styles.listItemLink}
-//           href={`${link.url}${utmParameters}`}
-//         >
-//           {link.text} ↗
-//         </a>
-//         <p className={styles.listItemDescription}>{link.description}</p>
-//       </li>
-//     ))}
-//   </ul>
-//   {moreLinks.map((link, i) => (
-//     <React.Fragment key={link.url}>
-//       <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-//       {i !== moreLinks.length - 1 && <> · </>}
-//     </React.Fragment>
-//   ))}
-// </Layout>
-
-// import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
-
-// import Layout from "../components/layout"
-// import Seo from "../components/seo"
-// import * as styles from "../components/index.module.css"
-
-// const links = [
-//   {
-//     text: "Tutorial",
-//     url: "https://www.gatsbyjs.com/docs/tutorial",
-//     description:
-//       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-//   },
-//   {
-//     text: "Examples",
-//     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-//     description:
-//       "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-//   },
-//   {
-//     text: "Plugin Library",
-//     url: "https://www.gatsbyjs.com/plugins",
-//     description:
-//       "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-//   },
-//   {
-//     text: "Build and Host",
-//     url: "https://www.gatsbyjs.com/cloud",
-//     description:
-//       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-//   },
-// ]
-
-// const samplePageLinks = [
-//   {
-//     text: "Page 2",
-//     url: "page-2",
-//     badge: false,
-//     description:
-//       "A simple example of linking to another page within a Gatsby site",
-//   },
-//   { text: "TypeScript", url: "using-typescript" },
-//   { text: "Server Side Rendering", url: "using-ssr" },
-//   { text: "Deferred Static Generation", url: "using-dsg" },
-// ]
-
-// const moreLinks = [
-//   { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-//   {
-//     text: "Documentation",
-//     url: "https://gatsbyjs.com/docs/",
-//   },
-//   {
-//     text: "Starters",
-//     url: "https://gatsbyjs.com/starters/",
-//   },
-//   {
-//     text: "Showcase",
-//     url: "https://gatsbyjs.com/showcase/",
-//   },
-//   {
-//     text: "Contributing",
-//     url: "https://www.gatsbyjs.com/contributing/",
-//   },
-//   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-// ]
-
-// const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
-//#endregion
+export default HomePage
