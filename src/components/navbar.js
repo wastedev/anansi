@@ -73,10 +73,7 @@ const NavBar = () => {
       </StyledMenu>
       <StyledFeedbackButtons>
         <button>t</button>
-        <button>
-          {/* <FontAwesomeIcon icon="fa-light fa-phone" /> */}
-          Book a call
-        </button>
+        <button>Book a call</button>
       </StyledFeedbackButtons>
     </StyledNavBar>
     // </StyledContainer>
