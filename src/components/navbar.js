@@ -42,7 +42,10 @@ const NavBar = () => {
     // <StyledContainer>
     <StyledNavBar>
       <StyledMenu>
-        <Link to="/"> <StaticImage loading="eager" src="../images/logo.svg" alt="Logo"/></Link>
+        <Link to="/">
+          {" "}
+          <StaticImage loading="eager" src="../images/logo.svg" alt="Logo" />
+        </Link>
         <Link to="/cases">Cases</Link>
         <Link to="/services">Services</Link>
         <Link to="/aboutUs">About us</Link>
