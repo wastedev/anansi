@@ -20,6 +20,8 @@ const StyledNavBar = styled.header`
 `
 
 const StyledMenu = styled.div`
+  justify-content: center;
+  display: flex;
   a {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -72,7 +74,7 @@ const NavBar = () => {
       <StyledFeedbackButtons>
         <button>t</button>
         <button>
-          <FontAwesomeIcon icon="fa-light fa-phone" />
+          {/* <FontAwesomeIcon icon="fa-light fa-phone" /> */}
           Book a call
         </button>
       </StyledFeedbackButtons>
