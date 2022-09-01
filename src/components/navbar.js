@@ -20,8 +20,11 @@ const StyledNavBar = styled.header`
 
 const StyledMenu = styled.div`
   a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     padding-right: 30px;
     font-size: 20px;
+    color: #a8a29e;
     text-decoration: none;
 
     :hover {
@@ -34,6 +37,15 @@ const StyledMenu = styled.div`
 const StyledFeedbackButtons = styled.div`
   button {
     margin-left: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-radius: 6px;
+    gap: 12px;
+    padding: 8px 18px;
+    font-size: 16px;
+    border: none;
+    background-color: #84cc16;
+    color: white;
 
     :hover {
       color: white;
@@ -47,7 +59,10 @@ const NavBar = () => {
     // <StyledContainer>
     <StyledNavBar>
       <StyledMenu>
-        <Link to="/"> <StaticImage loading="eager" src="../images/logo.svg" alt="Logo"/></Link>
+        <Link to="/">
+          {" "}
+          <StaticImage loading="eager" src="../images/logo.svg" alt="Logo" />
+        </Link>
         <Link to="/cases">Cases</Link>
         <Link to="/services">Services</Link>
         <Link to="/aboutUs">About us</Link>
@@ -55,8 +70,8 @@ const NavBar = () => {
         <Link to="/contacts">Contacts</Link>
       </StyledMenu>
       <StyledFeedbackButtons>
-        <button>кнопка1</button>
-        <button>кнопка2</button>
+        <button>t</button>
+        <button>Book a call</button>
       </StyledFeedbackButtons>
     </StyledNavBar>
     // </StyledContainer>
