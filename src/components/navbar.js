@@ -28,7 +28,6 @@ const StyledMenu = styled.div`
     text-decoration: none;
 
     :hover {
-      text-decoration: underline;
       color: #84cc16;
     }
   }
