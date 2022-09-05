@@ -184,28 +184,28 @@ const HomePage = () => {
         <div className="tecno_wrapper">
           <ul>
             <li>
-              <h3>Sql</h3>
+              <h3>.NET</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat.</p>
             </li>
             <li>
-              <h3>NoSql</h3>
+              <h3>JS Rust</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat.</p>
             </li>
             <li>
-              <h3>AWS</h3>
+              <h3>Go Swift</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat.</p>
             </li>
             <li>
-              <h3>Azure</h3>
+              <h3>Ruby</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
