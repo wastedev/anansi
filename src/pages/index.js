@@ -80,25 +80,23 @@ const StyledStrategyBlock = styled.div`
   }
 `
 const StyledTechnologiesblock = styled.div`
-
-
-  h1{
-    text-align:center;
+  h1 {
+    text-align: center;
   }
 
-  h3{
-    text-transform:uppercase;
-    text-align:center;
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
     padding: 10px 0px;
     margin: 0px;
   }
 
-  p{
-    text-align:center;
-    margin: 0px
+  p {
+    text-align: center;
+    margin: 0px;
   }
 
-  ul{
+  ul {
     height: auto;
     right: auto;
     display: grid;
@@ -106,7 +104,7 @@ const StyledTechnologiesblock = styled.div`
     grid-column-gap: 11px;
   }
 
-  li{
+  li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -115,28 +113,27 @@ const StyledTechnologiesblock = styled.div`
     width: 213px;
   }
 
-  .tecno_wrapper{
-    
+  .tecno_wrapper {
   }
 `
 
 const StyledInfoBlock = styled.div`
-padding: 40px 0px;
+  padding: 40px 0px;
 
-  .info_wrapper{
+  .info_wrapper {
     display: flex;
     flex-wrap: wrap;
   }
-  
-  .info_block{
+
+  .info_block {
     flex: 0 0 50%;
     max-width: 50%;
   }
-  .image_right{
+  .image_right {
     height: 400px;
     overflow: hidden;
   }
-  .text_left{
+  .text_left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +143,6 @@ padding: 40px 0px;
 const HomePage = () => {
   return (
     <StyledHomePage>
-
       <StyledCarouselBoxBlock>
         <h1>
           Lorem ipsum <b>dolor</b> sit amet!
@@ -185,31 +181,39 @@ const HomePage = () => {
           <ul>
             <li>
               <h3>.NET</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </li>
             <li>
               <h3>JS Rust</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </li>
             <li>
               <h3>Go Swift</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </li>
             <li>
               <h3>Ruby</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </li>
           </ul>
         </div>
@@ -219,10 +223,12 @@ const HomePage = () => {
         <div className="info_wrapper">
           <div className="text_left info_block">
             <h1>Lorem ipsum dolor sit amet!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
           <div className="image_right info_block">
             <StaticImage
