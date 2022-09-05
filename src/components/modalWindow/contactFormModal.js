@@ -54,12 +54,18 @@ const StyledCloseButton = styled.button`
 
 //#endregion
 
-const [modalActive, setModalActive] = React.useState(true)
-
-const Modal = ({ active, setActive }) => {
+const Modal = ({ active, setActive, children }) => {
   return (
-    <div className="modal">
-      <div className="modal__content"></div>
+    <div
+      className={active ? "modal.active" : "modal"}
+      onClick={() => setActive(false)}
+    >
+      <div
+        className={active ? "modal__content.active" : "modal__content"}
+        onClick={e => e.stopPropagation()}
+      >
+        {children}
+      </div>
     </div>
   )
 }

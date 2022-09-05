@@ -58,11 +58,14 @@ const StyledFeedbackButtons = styled.div`
   }
 `
 
-//#region contactForm
-
-//#endregion
-
 const NavBar = () => {
+  //#region contactModalWindowWork
+  const [modalActive, setModalActive] = React.useState(false)
+  console.log("Состояние модального окна")
+  console.log(modalActive)
+
+  //#endregion
+
   return (
     <StyledContainer>
       <StyledNavBar>
@@ -78,8 +81,12 @@ const NavBar = () => {
         </StyledMenu>
         <StyledFeedbackButtons>
           <button>t</button>
-          <button>Book a call</button>
+          <button onClick={() => setModalActive}>Book a call</button>{" "}
+          {/*модальное окно при нажатии на кнопку */}
         </StyledFeedbackButtons>
+        {/* <Modal active={modalActive} setActive={setModalActive}>
+          <h1>fucking text</h1>
+        </Modal> */}
       </StyledNavBar>
     </StyledContainer>
   )
