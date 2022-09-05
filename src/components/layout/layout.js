@@ -1,6 +1,7 @@
 import * as React from "react"
 import styled from "styled-components"
 import Header from "./header"
+import Footer from "./footer"
 
 const StyledLayout = styled.div`
   min-height: 100vh;
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
     <StyledLayout>
       <Header />
       <main>{children}</main>
+      <Footer />
     </StyledLayout>
   )
 }
