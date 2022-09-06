@@ -114,11 +114,16 @@ const StyledTechnologiesblock = styled.div`
   }
 
   .tecno_wrapper {
+    width 100%
   }
 `
+const StyledContainer = styled.div.attrs({
+  className:"container mx-auto",
+})``;
 
 const StyledInfoBlock = styled.div`
   padding: 40px 0px;
+
 
   .info_wrapper {
     display: flex;
@@ -176,6 +181,8 @@ const HomePage = () => {
       </StyledStrategyBlock>
       
       <StyledTechnologiesblock>
+        <StyledContainer>
+
         <h1>Technologies</h1>
         <div className="tecno_wrapper">
           <ul>
@@ -217,6 +224,7 @@ const HomePage = () => {
             </li>
           </ul>
         </div>
+        </StyledContainer>
       </StyledTechnologiesblock>
 
       <StyledInfoBlock>
