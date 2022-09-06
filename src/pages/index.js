@@ -28,19 +28,16 @@ const StyledButton = styled.div`
 `
 
 const StyledCarouselBoxBlock = styled.div`
-  /* margin: 0;
-  padding: 0; */
-  width: 50vh;
+  padding: 40px 0px;
+  width: 100%;
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   h1 {
-    font-style: normal;
-    font-weight: 100;
-    font-size: 64px;
-    line-height: 64px;
-    color: #292524;
+    font-size: 40px;
+    text-transform:uppercase;
+    font-weight:bold;
   }
 
   div {
@@ -58,16 +55,15 @@ const StyledCarouselBoxBlock = styled.div`
 const StyledStrategyBlock = styled.div`
   background-color: #292524;
   color: white;
+  width: 100%;
+  padding: 100px 0px;
 
   h1 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    padding: 10px;
-    line-height: 120px;
+    text-transform:uppercase;
+    font-weight: bold;
   }
 
   text {
@@ -80,15 +76,21 @@ const StyledStrategyBlock = styled.div`
   }
 `
 const StyledTechnologiesblock = styled.div`
+  padding: 40px 0px;
+
+
   h1 {
     text-align: center;
+    font-size: 40px;
+    text-transform:uppercase;
+    font-weight:bold;
   }
 
   h3 {
-    text-transform: uppercase;
     text-align: center;
     padding: 10px 0px;
     margin: 0px;
+    font-size:20px;
   }
 
   p {
@@ -111,24 +113,38 @@ const StyledTechnologiesblock = styled.div`
     z-index: 3;
     position: relative;
     width: 213px;
+    padding: 25px 0px;
   }
 
   .tecno_wrapper {
     width 100%
   }
 `
+const TecnoWrapper = styled.div`
+  width 100%
+`
+
 const StyledContainer = styled.div.attrs({
-  className:"container mx-auto",
-})``;
+  className: "container mx-auto",
+})``
+
+const InfoWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  h1 {
+    font-size: 40px;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+
+  p {
+    font-size: 16px;
+  }
+`
 
 const StyledInfoBlock = styled.div`
   padding: 40px 0px;
-
-
-  .info_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .info_block {
     flex: 0 0 50%;
@@ -149,102 +165,146 @@ const HomePage = () => {
   return (
     <StyledHomePage>
       <StyledCarouselBoxBlock>
-        <h1>
-          Lorem ipsum <b>dolor</b> sit amet!
-        </h1>
-        <text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </text>
-        <div>
-          <StaticImage
-            src="../images/CodeSnippetImage.png"
-            alt="non image"
-          ></StaticImage>
-        </div>
-        <StyledButton>
-          <button>Grow my business</button>
-        </StyledButton>
+        <StyledContainer>
+          <h1>
+            Lorem ipsum dolor sit amet!
+          </h1>
+          <text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </text>
+          <div>
+            <StaticImage
+              src="../images/CodeSnippetImage.png"
+              alt="non image"
+            ></StaticImage>
+          </div>
+          <StyledButton>
+            <button>Grow my business</button>
+          </StyledButton>
+        </StyledContainer>
       </StyledCarouselBoxBlock>
       
       <StyledStrategyBlock>
-        <h1>How we works?</h1>
-        <text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do.
-        </text>
+        <StyledContainer>
+          <h1>How we works?</h1>
+          <text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do.
+          </text>
+        </StyledContainer>
       </StyledStrategyBlock>
       
       <StyledTechnologiesblock>
         <StyledContainer>
+          <h1>Technologies</h1>
+          <TecnoWrapper>
+            <ul>
+              <li>
+                <h3>.NET</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+              <li>
+                <h3>JS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+              <li>
+                <h3>Go</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+              <li>
+                <h3>Ruby</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+            </ul>
 
-        <h1>Technologies</h1>
-        <div className="tecno_wrapper">
-          <ul>
-            <li>
-              <h3>.NET</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </li>
-            <li>
-              <h3>JS Rust</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </li>
-            <li>
-              <h3>Go Swift</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </li>
-            <li>
-              <h3>Ruby</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </li>
-          </ul>
-        </div>
+            <ul>
+              <li>
+                <h3>Rust</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+              <li>
+                <h3>Swift</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+              <li>
+                <h3>React</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+              <li>
+                <h3>Ruby</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+            </ul>
+          </TecnoWrapper>
         </StyledContainer>
       </StyledTechnologiesblock>
 
       <StyledInfoBlock>
-        <div className="info_wrapper">
-          <div className="text_left info_block">
-            <h1>Lorem ipsum dolor sit amet!</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-          <div className="image_right info_block">
-            <StaticImage
-              src="../images/default_img.png"
-              alt="non image"
-            ></StaticImage>
-          </div>
-        </div>
+        <StyledContainer>
+          <InfoWrapper>
+            <div className="text_left info_block">
+              <h1>Lorem ipsum dolor sit amet!</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div className="image_right info_block">
+              <StaticImage
+                src="../images/default_img.png"
+                alt="non image"
+              ></StaticImage>
+            </div>
+          </InfoWrapper>
+        </StyledContainer>
       </StyledInfoBlock>
     </StyledHomePage>
   )
