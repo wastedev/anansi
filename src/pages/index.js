@@ -36,8 +36,8 @@ const StyledCarouselBoxBlock = styled.div`
 
   h1 {
     font-size: 40px;
-    text-transform:uppercase;
-    font-weight:bold;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   div {
@@ -62,7 +62,7 @@ const StyledStrategyBlock = styled.div`
     font-size: 40px;
     display: flex;
     justify-content: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: bold;
   }
 
@@ -134,8 +134,8 @@ const InfoWrapper = styled.div`
 
   h1 {
     font-size: 40px;
-    text-transform:uppercase;
-    font-weight:bold;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   p {
@@ -161,14 +161,54 @@ const StyledInfoBlock = styled.div`
   }
 `
 
+const StyeldTeamSections = styled.div``
+
+const TeamLeft = styled.div`
+  flex: 0 0 40%;
+  max-width: 40%;
+
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+`
+
+const TeamRight = styled.div`
+  flex: 0 0 60%;
+  max-width: 60%;
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 11px;
+    height: auto;
+    right: auto;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
+    max-width:450px;
+  }
+
+  li h3{
+    text-align:center;
+  }
+`
+
+const TeamSection = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
 const HomePage = () => {
   return (
     <StyledHomePage>
       <StyledCarouselBoxBlock>
         <StyledContainer>
-          <h1>
-            Lorem ipsum dolor sit amet!
-          </h1>
+          <h1>Lorem ipsum dolor sit amet!</h1>
           <text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -306,6 +346,60 @@ const HomePage = () => {
           </InfoWrapper>
         </StyledContainer>
       </StyledInfoBlock>
+
+      <StyeldTeamSections>
+        <StyledContainer>
+          <TeamSection>
+            <TeamLeft>
+              <h1>Our team</h1>
+            </TeamLeft>
+            <TeamRight>
+              <ul>
+                <li>
+                  <h3>peron1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </li>
+                <li>
+                  <h3>peron2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </li>
+                <li>
+                  <h3>peron3</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </li>
+                <li>
+                  <h3>peron4</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </li>
+                <li>
+                  <h3>peron5</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </li>
+              </ul>
+            </TeamRight>
+          </TeamSection>
+        </StyledContainer>
+      </StyeldTeamSections>
     </StyledHomePage>
   )
 }
