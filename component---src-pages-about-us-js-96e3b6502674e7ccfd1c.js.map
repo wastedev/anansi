@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-about-us-js-96e3b6502674e7ccfd1c.js","mappings":"oJAIA,UAFgB,WAAQ,C","sources":["webpack://gatsby-starter-default/./src/pages/aboutUs.js"],"sourcesContent":["import * as React from \"react\"\n\nconst AboutUs = () => {}\n\nexport default AboutUs\n"],"names":[],"sourceRoot":""}

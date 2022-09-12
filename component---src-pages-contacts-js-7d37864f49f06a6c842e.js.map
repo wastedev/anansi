@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-contacts-js-7d37864f49f06a6c842e.js","mappings":"mJAIA,UAFiB,WAAQ,C","sources":["webpack://gatsby-starter-default/./src/pages/contacts.js"],"sourcesContent":["import * as React from \"react\"\n\nconst Contacts = () => {}\n\nexport default Contacts\n"],"names":[],"sourceRoot":""}

@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-cases-js-98ac7d8a904a435a8aac.js","mappings":"6HAIA,UAFc,WAAQ,C","sources":["webpack://anansi-labs/./src/pages/cases.js"],"sourcesContent":["import * as React from \"react\"\r\n\r\nconst Cases = () => {}\r\n\r\nexport default Cases\r\n"],"names":[],"sourceRoot":""}

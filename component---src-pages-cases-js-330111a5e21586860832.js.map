@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-cases-js-330111a5e21586860832.js","mappings":"mJAIA,UAFc,WAAQ,C","sources":["webpack://gatsby-starter-default/./src/pages/cases.js"],"sourcesContent":["import * as React from \"react\"\n\nconst Cases = () => {}\n\nexport default Cases\n"],"names":[],"sourceRoot":""}
