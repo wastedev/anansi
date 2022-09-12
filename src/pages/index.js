@@ -79,6 +79,66 @@ const StyledStrategyBlock = styled.div`
     margin: 0 auto;
   }
 `
+const StyledTechnologiesblock = styled.div`
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px;
+  }
+
+  p {
+    text-align: center;
+    margin: 0px;
+  }
+
+  ul {
+    height: auto;
+    right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 11px;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    position: relative;
+    width: 213px;
+  }
+
+  .tecno_wrapper {
+  }
+`
+
+const StyledInfoBlock = styled.div`
+  padding: 40px 0px;
+
+  .info_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info_block {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .image_right {
+    height: 400px;
+    overflow: hidden;
+  }
+  .text_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+`
 
 const HomePage = () => {
   return (
@@ -103,6 +163,7 @@ const HomePage = () => {
           <button>Grow my business</button>
         </StyledButton>
       </StyledCarouselBoxBlock>
+      
       <StyledStrategyBlock>
         <h1>How we works?</h1>
         <text>
@@ -113,6 +174,70 @@ const HomePage = () => {
           consectetur adipiscing elit, sed do.
         </text>
       </StyledStrategyBlock>
+      
+      <StyledTechnologiesblock>
+        <h1>Technologies</h1>
+        <div className="tecno_wrapper">
+          <ul>
+            <li>
+              <h3>.NET</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+            <li>
+              <h3>JS Rust</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+            <li>
+              <h3>Go Swift</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+            <li>
+              <h3>Ruby</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </StyledTechnologiesblock>
+
+      <StyledInfoBlock>
+        <div className="info_wrapper">
+          <div className="text_left info_block">
+            <h1>Lorem ipsum dolor sit amet!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div className="image_right info_block">
+            <StaticImage
+              src="../images/default_img.png"
+              alt="non image"
+            ></StaticImage>
+          </div>
+        </div>
+      </StyledInfoBlock>
     </StyledHomePage>
   )
 }
