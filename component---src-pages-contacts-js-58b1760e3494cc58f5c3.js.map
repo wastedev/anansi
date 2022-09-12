@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-contacts-js-58b1760e3494cc58f5c3.js","mappings":"6HAIA,UAFiB,WAAQ,C","sources":["webpack://anansi-labs/./src/pages/contacts.js"],"sourcesContent":["import * as React from \"react\"\r\n\r\nconst Contacts = () => {}\r\n\r\nexport default Contacts\r\n"],"names":[],"sourceRoot":""}

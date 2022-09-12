@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-services-js-7140cf923340ecda924d.js","mappings":"6HAIA,UAFiB,WAAQ,C","sources":["webpack://anansi-labs/./src/pages/services.js"],"sourcesContent":["import * as React from \"react\"\r\n\r\nconst Services = () => {}\r\n\r\nexport default Services\r\n"],"names":[],"sourceRoot":""}

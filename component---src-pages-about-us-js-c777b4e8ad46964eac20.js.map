@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-about-us-js-c777b4e8ad46964eac20.js","mappings":"8HAIA,UAFgB,WAAQ,C","sources":["webpack://anansi-labs/./src/pages/aboutUs.js"],"sourcesContent":["import * as React from \"react\"\r\n\r\nconst AboutUs = () => {}\r\n\r\nexport default AboutUs\r\n"],"names":[],"sourceRoot":""}
