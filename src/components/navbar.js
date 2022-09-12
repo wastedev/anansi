@@ -2,6 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Modal from "./modalWindow/contactFormModal"
 
 const StyledContainer = styled.div`
   width: 100%;
@@ -58,6 +59,13 @@ const StyledFeedbackButtons = styled.div`
 `
 
 const NavBar = () => {
+  //#region contactModalWindowWork
+  const [modalActive, setModalActive] = React.useState(false)
+  console.log("Состояние модального окна")
+  console.log(modalActive)
+
+  //#endregion
+
   return (
     <StyledContainer>
       <StyledNavBar>
@@ -73,8 +81,12 @@ const NavBar = () => {
         </StyledMenu>
         <StyledFeedbackButtons>
           <button>t</button>
-          <button>Book a call</button>
+          <button onClick={() => setModalActive}>Book a call</button>{" "}
+          {/*модальное окно при нажатии на кнопку */}
         </StyledFeedbackButtons>
+        {/* <Modal active={modalActive} setActive={setModalActive}>
+          <h1>fucking text</h1>
+        </Modal> */}
       </StyledNavBar>
     </StyledContainer>
   )
