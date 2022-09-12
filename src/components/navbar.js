@@ -17,6 +17,12 @@ const StyledNavBar = styled.header`
 `
 
 const StyledMenu = styled.div`
+  a:first-child {
+    :hover {
+      background-color: #84cc16;
+    }
+  }
+
   a {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -57,7 +63,6 @@ const NavBar = () => {
       <StyledNavBar>
         <StyledMenu>
           <Link to="/">
-            {" "}
             <StaticImage loading="eager" src="../images/logo.svg" alt="Logo" />
           </Link>
           <Link to="/cases">Cases</Link>

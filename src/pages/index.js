@@ -163,7 +163,7 @@ const HomePage = () => {
           <button>Grow my business</button>
         </StyledButton>
       </StyledCarouselBoxBlock>
-
+      
       <StyledStrategyBlock>
         <h1>How we works?</h1>
         <text>
@@ -174,7 +174,7 @@ const HomePage = () => {
           consectetur adipiscing elit, sed do.
         </text>
       </StyledStrategyBlock>
-
+      
       <StyledTechnologiesblock>
         <h1>Technologies</h1>
         <div className="tecno_wrapper">
