@@ -2,6 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Modal from "./modalWindow/contactFormModal"
 
 const StyledContainer = styled.div`
   width: 100%;
@@ -17,6 +18,12 @@ const StyledNavBar = styled.header`
 `
 
 const StyledMenu = styled.div`
+  a:first-child {
+    :hover {
+      background-color: #84cc16;
+    }
+  }
+
   a {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -52,12 +59,18 @@ const StyledFeedbackButtons = styled.div`
 `
 
 const NavBar = () => {
+  //#region contactModalWindowWork
+  const [modalActive, setModalActive] = React.useState(false)
+  console.log("Состояние модального окна")
+  console.log(modalActive)
+
+  //#endregion
+
   return (
     <StyledContainer>
       <StyledNavBar>
         <StyledMenu>
           <Link to="/">
-            {" "}
             <StaticImage loading="eager" src="../images/logo.svg" alt="Logo" />
           </Link>
           <Link to="/cases">Cases</Link>
@@ -68,8 +81,12 @@ const NavBar = () => {
         </StyledMenu>
         <StyledFeedbackButtons>
           <button>t</button>
-          <button>Book a call</button>
+          <button onClick={() => setModalActive}>Book a call</button>{" "}
+          {/*модальное окно при нажатии на кнопку */}
         </StyledFeedbackButtons>
+        {/* <Modal active={modalActive} setActive={setModalActive}>
+          <h1>fucking text</h1>
+        </Modal> */}
       </StyledNavBar>
     </StyledContainer>
   )
